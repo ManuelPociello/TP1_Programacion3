@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.encabezado {
+    margin: 0;
+    background: linear-gradient(150deg, #ff4463,#ffc0cb,#89fdfd ,#00ffff);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.encabezado img {
+    width: 40%;
+}
+.encabezado h1 {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: darkviolet;
+}
+.barra ul{
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.barra ul a{
+    text-decoration: none;
+    padding: 5px;
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 20%;
+}
+.hero img {
+    width: 75%;
+}
+
+.contenedor{
+    max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
