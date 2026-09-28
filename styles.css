@@ -40,21 +40,34 @@
     color: blue;
     background-color: #ffbcbc;
     border: 1px solid blue;
-    border-radius: 20%;
+    border-radius: 12px;
 }
 .hero img {
     width: 75%;
 }
 
 .contenedor{
-    position: relative;
-    top: 250px;
     background-color: #1e3a8a;
     margin: 0 auto;
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.hero, #sobre-nosotros{
+.hero {
+    margin-top: 30vh;
+    display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+#sobre-nosotros, #contacto{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -63,7 +76,17 @@
   border: 1px solid #e2e8f0;
   border-radius: 12px;
   padding: 20px;
-  margin: 35px 0;
+  margin-top: 20px;
+}
+
+#contacto form{
+    background-color: blue;
+    border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
 }
 
 .hero img{
@@ -71,10 +94,23 @@
     margin: 0 auto;
 }
 
-.hero h2, #sobre-nosotros h2{
+h2{
     font-size: 1.75rem;
 }
 
-.hero p, #sobre-nosotros p{
+p{
     font-size: 1.20rem;
+}
+
+.pie{
+    margin: 0;
+    background: linear-gradient(150deg, #ff4463,#ffc0cb,#89fdfd ,#00ffff);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 }
