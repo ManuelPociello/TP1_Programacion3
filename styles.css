@@ -80,6 +80,12 @@
   align-items: flex-start;
 }
 
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 h2{
     font-size: 1.75rem;
 }
