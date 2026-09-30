@@ -43,6 +43,11 @@
     border-radius: 12px;
 }
 
+.barra ul a:hover {
+    background-color: #ffffff;
+    color: darkviolet;
+}
+
 .seccion img {
     width: 100%;
     max-width: 700px;
