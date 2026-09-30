@@ -43,7 +43,7 @@
     border-radius: 12px;
 }
 
-.hero img {
+.seccion img {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
@@ -59,7 +59,7 @@
     gap: 20px;
 }
 
-.hero, #sobre-nosotros, #contacto{
+.seccion{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -70,7 +70,7 @@
   padding: 20px;
 }
 
-#contacto form{
+.seccion form{
     background-color: blue;
     border-radius: 12px;
   padding: 20px;
