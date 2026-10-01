@@ -132,6 +132,19 @@
     border-radius: var(--radio-grande);
 
     padding: 20px;
+    animation: aparecer 0.8s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .seccion img {
@@ -221,14 +234,16 @@ p {
 
     display: flex;
     flex-direction: column;
-
     gap: 8px;
 
-    transition: transform 0.2s;
+    transition: 
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .producto:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .producto img {
@@ -250,4 +265,53 @@ p {
     background: var(--color-header-footer);
     padding: 30px;
     text-align: center;
+}
+
+@media (min-width: 600px) {
+
+    .encabezado img {
+        width: 90px;
+    }
+
+    .encabezado h1 {
+        font-size: 2.5rem;
+    }
+
+    .barra {
+        width: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .barra ul {
+        padding: 10px 20px;
+    }
+
+    .contenedor {
+        padding: 30px;
+    }
+
+    .seccion {
+        padding: 25px;
+    }
+
+    .inicio-principal {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .inicio-principal img {
+        width: 45%;
+        max-width: 400px;
+        margin: 0;
+    }
+
+    .inicio-principal > div {
+        width: 55%;
+    }
+
+    .productos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
