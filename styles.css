@@ -8,39 +8,47 @@
     margin: 0;
     background: linear-gradient(150deg, #ff4463,#ffc0cb,#89fdfd ,#00ffff);
     width: 100%;
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;*/
     position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
 }
 .encabezado img {
-    width: 40%;
+    position: relative;
+    top:0;
+    left: 0;
+    width: 180px;
+    max-width: 60%;
 }
 .encabezado h1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
     margin-bottom: 0;
     font-weight: bold;
-    font-size: 1.5rem;
-    color: darkviolet;
+    font-size: 2.1rem;
+    color:indigo;
+    text-shadow: 1px 1px 12px rgb(32, 28, 255);
 }
 .barra ul{
     list-style: none;
     margin: 0;
     padding: 20px 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 10px;
 }
 .barra ul a{
     text-decoration: none;
     padding: 5px;
-    color: blue;
+    color: rgb(32, 28, 255);
     background-color: #ffbcbc;
-    border: 1px solid blue;
+    border: 1px solid rgb(32, 28, 255);
     border-radius: 12px;
+    font-size: 1.1rem;
 }
 
 .barra ul a:hover {
