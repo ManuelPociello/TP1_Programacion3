@@ -55,9 +55,10 @@
     font-size: 1.1rem;
 }
 
-.barra ul a:hover {
+.barra ul a[aria-current="page"] {
     background-color: #ffffff;
     color: darkviolet;
+    border: 1px solid darkviolet;
 }
 
 .seccion img {
