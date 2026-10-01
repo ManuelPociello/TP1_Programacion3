@@ -1,7 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .encabezado {
@@ -37,14 +37,14 @@
     width: 100%;
 }
 
-.barra ul{
+.barra ul {
     list-style: none;
     padding: 10px 0 15px;
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-.barra ul a{
+.barra ul a {
     display: block;
     text-decoration: none;
     padding: 2px 7px;
@@ -66,7 +66,7 @@
     margin: 0 auto;
 }
 
-.contenedor{
+.contenedor {
     background-color: rgb(43, 121, 194);
     margin: 0 auto;
     padding: 24px;
@@ -76,31 +76,48 @@
     gap: 20px;
 }
 
-.seccion{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: stretch;
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 20px;
-}
-
-.seccion form{
-    background-color: rgb(43, 121, 194);
-    border-radius: 12px;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.campo {
+.seccion {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 20px;
+    align-items: stretch;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.seccion form {
+    width: 100%;
+    background-color: rgb(43, 121, 194);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.seccion button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e3a8a;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 h2 {
