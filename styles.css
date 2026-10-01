@@ -119,7 +119,7 @@ p {
 .productos-grid {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -140,7 +140,7 @@ p {
 
 .producto img {
     width: 100%;
-    height: 220px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 10px;
 }
