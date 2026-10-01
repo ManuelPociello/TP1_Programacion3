@@ -1,108 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/logo.png">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Dulce Nieve | Heladería</title>
-</head>
-<body id="pagina-principal">
+  </head>
+  <body id="pagina-principal">
     <header class="encabezado">
-        <img src="img/logo.png" alt="Logo de Dulce Nieve">
-        <h1><em>Dulce Nieve</em></h1>
-        <nav class="barra">
-            <ul>
-                <li>
-                    <a href="index.html" aria-current="page">Inicio</a>
-                </li>
-                <li>
-                    <a href="productos.html">Productos</a>
-                </li>
-            </ul>
-        </nav>
+      <img src="img/logo.png" alt="Logo de Dulce Nieve" />
+      <h1><em>Dulce Nieve</em></h1>
+      <nav class="barra">
+        <ul>
+          <li>
+            <a href="index.html" aria-current="page">Inicio</a>
+          </li>
+          <li>
+            <a href="productos.html">Productos</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="contenedor">
+      <section class="seccion inicio-principal">
+        <img
+          src="https://images.unsplash.com/photo-1563805042-7684c019e1cb"
+          alt="Helado artesanal servido en una copa"
+        />
 
-        <section class="seccion inicio-principal">
-    <img
-        src="https://images.unsplash.com/photo-1563805042-7684c019e1cb"
-        alt="Helado artesanal servido en una copa"
-    >
+        <div>
+          <h2>El sabor de tus mejores momentos</h2>
 
-    <div>
-        <h2>El sabor de tus mejores momentos</h2>
+          <p>
+            Helados artesanales elaborados con ingredientes seleccionados para
+            disfrutar cada momento.
+          </p>
+        </div>
+      </section>
+
+      <section class="seccion sobre-nosotros">
+        <h2>Sobre nosotros</h2>
 
         <p>
-            Helados artesanales elaborados con ingredientes seleccionados
-            para disfrutar cada momento.
+          En Dulce Nieve creemos que un buen helado puede convertir cualquier
+          momento en un recuerdo especial. Elaboramos nuestros productos de
+          manera artesanal, utilizando ingredientes de calidad y combinando
+          sabores clásicos con propuestas originales.
         </p>
-    </div>
-    </section>
+      </section>
 
-        <section class="seccion">
-            <h2>Sobre nosotros</h2>
+      <section class="seccion">
+        <h2>Contacto</h2>
 
-            <p>
-                En Dulce Nieve creemos que un buen helado puede convertir
-                cualquier momento en un recuerdo especial. Elaboramos nuestros
-                productos de manera artesanal, utilizando ingredientes de
-                calidad y combinando sabores clásicos con propuestas originales.
-            </p>
-        </section>
+        <form action="#" method="post">
+          <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              autocomplete="name"
+              required
+            />
+          </div>
 
-        <section class="seccion">
-            <h2>Contacto</h2>
+          <div class="campo">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+          </div>
 
-            <form action="#" method="post">
-                <div class="campo">
-                    <label for="nombre">Nombre:</label>
-                    <input
-                        type="text"
-                        id="nombre"
-                        name="nombre"
-                        autocomplete="name"
-                        required
-                    >
-                </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
 
-                <div class="campo">
-                    <label for="email">Email:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        autocomplete="email"
-                        required
-                    >
-                </div>
-
-                <div class="campo">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea
-                        id="mensaje"
-                        name="mensaje"
-                        rows="5"
-                        required
-                    ></textarea>
-                </div>
-
-                <button type="submit">Enviar mensaje</button>
-            </form>
-        </section>
-
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </section>
     </main>
 
     <footer class="pie">
-        <address>
-            <p>Dirección: Av. Principal 123, San Nicolás de los Arroyos</p>
-            <p>Email: contacto@dulcenieve.com</p>
-        </address>
+      <address>
+        <p>Dirección: Av. Principal 123, San Nicolás de los Arroyos</p>
+        <p>Email: contacto@dulcenieve.com</p>
+      </address>
 
-        <p>Redes sociales: Instagram · Facebook</p>
+      <p>Redes sociales: Instagram · Facebook</p>
 
-        <p>&copy; 2026 Dulce Nieve. Todos los derechos reservados.</p>
+      <p>&copy; 2026 Dulce Nieve. Todos los derechos reservados.</p>
     </footer>
-</body>
+  </body>
 </html>
