@@ -165,6 +165,10 @@
     left: 25px;
 }
 
+.inicio-principal p {
+  background-color: rgba(255, 192, 203, 0.5);
+}
+
 .seccion form {
   width: 100%;
 
@@ -333,7 +337,7 @@ p {
   }
 
   .inicio-principal > div {
-    max-width: 375px;
+    max-width: 350px;
     top: 50px;
     left: 40px;
   }
